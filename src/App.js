@@ -6,6 +6,7 @@ import React, { Component } from 'react'
 
 // import IterationSample from './IterationSample/IterationSample'
 import LifeCycleSample from './LifeCycleSample/LifeCycleSample'
+import FunctionalComponent from './FunctionalComponent/FunctionalComponent'
 
 
 function getRandomColor() {
@@ -39,8 +40,12 @@ class App extends Component {
       <div>
         <button onClick={this.handleClick}>랜덤 색상</button>
         <LifeCycleSample color={this.state.color} />
+
+        <FunctionalComponent name="테스트"/>
       </div>
 
+
+      
     )
   }
 }
