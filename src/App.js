@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-// import Button from './component/Button'
-import StyledButton from './component/StyledButton'
+import PageTemplate from './components/PageTemplate'
+import TodoInput from './components/TodoInput'
+import TodoList from './components/TodoList'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <StyledButton big>버튼</StyledButton>
+        <PageTemplate>
+          <TodoInput/>
+          <TodoList/>
+        </PageTemplate>
       </div>
     )
   }
