@@ -3,13 +3,14 @@ import PageTemplate from './components/PageTemplate'
 import TodoInput from './components/TodoInput'
 import TodoList from './components/TodoList'
 
+const initaliTodos = new Array(500).fill(0).map(
+  (foo, index) => ({id: index, text: `일정 ${index}`, done:false})
+)
+
 class App extends Component {
   state = {
     input : '',
-    todos: [
-      {id: 0, text: '리액트 공부하기', done: true},
-      {id: 1, text: '컴포넌트 스타일링 해보기', done: false}
-    ]
+    todos: initaliTodos
   }
 
   id = 1
